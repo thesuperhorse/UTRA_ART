@@ -1102,6 +1102,19 @@ map_msgs_generate_messages_cpp/fast:
 .PHONY : map_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named velmappercoupled
+
+# Build rule for target.
+velmappercoupled: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 velmappercoupled
+.PHONY : velmappercoupled
+
+# fast build rule for target.
+velmappercoupled/fast:
+	$(MAKE) -f control/src/cmdvel/CMakeFiles/velmappercoupled.dir/build.make control/src/cmdvel/CMakeFiles/velmappercoupled.dir/build
+.PHONY : velmappercoupled/fast
+
+#=============================================================================
 # Target rules for targets named velmapper
 
 # Build rule for target.
@@ -5723,6 +5736,7 @@ help:
 	@echo "... map_msgs_generate_messages_eus"
 	@echo "... _map_msgs_generate_messages_check_deps_GetPointMap"
 	@echo "... map_msgs_generate_messages_cpp"
+	@echo "... velmappercoupled"
 	@echo "... velmapper"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"

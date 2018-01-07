@@ -166,6 +166,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+control/src/cmdvel/CMakeFiles/velmappercoupled.dir/rule:
+	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f CMakeFiles/Makefile2 control/src/cmdvel/CMakeFiles/velmappercoupled.dir/rule
+.PHONY : control/src/cmdvel/CMakeFiles/velmappercoupled.dir/rule
+
+# Convenience name for target.
+velmappercoupled: control/src/cmdvel/CMakeFiles/velmappercoupled.dir/rule
+
+.PHONY : velmappercoupled
+
+# fast build rule for target.
+velmappercoupled/fast:
+	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/cmdvel/CMakeFiles/velmappercoupled.dir/build.make control/src/cmdvel/CMakeFiles/velmappercoupled.dir/build
+.PHONY : velmappercoupled/fast
+
+# Convenience name for target.
 control/src/cmdvel/CMakeFiles/velmapper.dir/rule:
 	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f CMakeFiles/Makefile2 control/src/cmdvel/CMakeFiles/velmapper.dir/rule
 .PHONY : control/src/cmdvel/CMakeFiles/velmapper.dir/rule
@@ -399,6 +414,33 @@ src/velmapper.cpp.s:
 	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/cmdvel/CMakeFiles/velmapper.dir/build.make control/src/cmdvel/CMakeFiles/velmapper.dir/src/velmapper.cpp.s
 .PHONY : src/velmapper.cpp.s
 
+src/velmappercoupled.o: src/velmappercoupled.cpp.o
+
+.PHONY : src/velmappercoupled.o
+
+# target to build an object file
+src/velmappercoupled.cpp.o:
+	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/cmdvel/CMakeFiles/velmappercoupled.dir/build.make control/src/cmdvel/CMakeFiles/velmappercoupled.dir/src/velmappercoupled.cpp.o
+.PHONY : src/velmappercoupled.cpp.o
+
+src/velmappercoupled.i: src/velmappercoupled.cpp.i
+
+.PHONY : src/velmappercoupled.i
+
+# target to preprocess a source file
+src/velmappercoupled.cpp.i:
+	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/cmdvel/CMakeFiles/velmappercoupled.dir/build.make control/src/cmdvel/CMakeFiles/velmappercoupled.dir/src/velmappercoupled.cpp.i
+.PHONY : src/velmappercoupled.cpp.i
+
+src/velmappercoupled.s: src/velmappercoupled.cpp.s
+
+.PHONY : src/velmappercoupled.s
+
+# target to generate assembly for a file
+src/velmappercoupled.cpp.s:
+	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/cmdvel/CMakeFiles/velmappercoupled.dir/build.make control/src/cmdvel/CMakeFiles/velmappercoupled.dir/src/velmappercoupled.cpp.s
+.PHONY : src/velmappercoupled.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -409,6 +451,7 @@ help:
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... install/strip"
+	@echo "... velmappercoupled"
 	@echo "... velmapper"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... test"
@@ -430,6 +473,9 @@ help:
 	@echo "... src/velmapper.o"
 	@echo "... src/velmapper.i"
 	@echo "... src/velmapper.s"
+	@echo "... src/velmappercoupled.o"
+	@echo "... src/velmappercoupled.i"
+	@echo "... src/velmappercoupled.s"
 .PHONY : help
 
 

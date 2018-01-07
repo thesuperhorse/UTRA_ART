@@ -27,10 +27,10 @@ int main(int argc, char **argv)
   ros::Time current_time,prev_time;
   current_time = ros::Time::now();
 
-  ros::Subscriber sub1 = n.subscribe("encoder1", 1000, enc1cb);
-  ros::Subscriber sub2 = n.subscribe("encoder2", 1000, enc2cb);
-  ros::Publisher rcom_pub = n.advertise<std_msgs::Float64>("rmotor", 50);
-  ros::Publisher lcom_pub = n.advertise<std_msgs::Float64>("lmotor", 50);
+  ros::Subscriber sub1 = n.subscribe("encoder1_node/encoder1", 1000, enc1cb);
+  ros::Subscriber sub2 = n.subscribe("encoder2_node/encoder2", 1000, enc2cb);
+  ros::Publisher rcom_pub = n.advertise<std_msgs::Float64>("motor_node/rmotor", 50);
+  ros::Publisher lcom_pub = n.advertise<std_msgs::Float64>("motor_node/lmotor", 50);
   ros::Rate loop_rate(10);
 
   std_msgs::Float64 rcommsg;
@@ -39,36 +39,70 @@ int main(int argc, char **argv)
   /*Collect the required measurements*/ 
   double rcommand,lcommand,one;
   one = 1.0;
-  MatrixXf A(2601,3);
-  VectorXf wr(3);
-  VectorXf wl(3);
-  VectorXf yr(2601);
-  VectorXf yl(2601);
+  MatrixXf Ar(255,2);
+  MatrixXf Al(255,2);
+  VectorXf wr(2);
+  VectorXf wl(2);
+  VectorXf yr(255);
+  VectorXf yl(255);
   rcommand = 0;
-  lcommand = 0;
-  for(int i=0;i<51;i++){
-    for(int j=0;j<51;j++){
-      if(!n.ok()){
-        return -1;
-      }
-      rcommsg.data = rcommand;
-      lcommsg.data = lcommand;
-      rcom_pub.publish(rcommsg);
-      lcom_pub.publish(lcommsg);
-      sleep(1); //wait 1 sec for motor to fully react to the command
-      ros::spinOnce(); //read the encoder values
-      A(j+i*51,0) = one;
-      A(j+i*51,1) = rcommand;
-      A(j+i*51,2) = lcommand;
-      yr(j+i*51) = enc1;
-      yl(j+i*51) = enc2;
-      lcommand+=5;
-      cout << "right velocity is :\n" << enc1 << endl;
-      cout << "left velocity is :\n" << enc2 << endl;
+  lcommand = 127;
+  rcommsg.data = rcommand;
+  rcom_pub.publish(rcommsg);
+  sleep(10);
+  for(int i=0;i<255;i++){
+    if(!n.ok()){
+      return -1;
     }
-    cout << "Updated 51 rows :\n" << A.block(i*51,0,51,3) << endl;
-    rcommand+=5; 
-  } 
+    rcommsg.data = rcommand;
+    lcommsg.data = lcommand;
+    rcom_pub.publish(rcommsg);
+    lcom_pub.publish(lcommsg);
+    sleep(2); //wait 1 sec for motor to fully react to the command
+    ros::spinOnce(); //read the encoder values
+    if(rcommand < 127){
+      enc1 = enc1 * -1.0;
+    }
+    if(lcommand < 127){
+      enc2 = enc2 * -1.0;
+    }
+    Ar(i,0) = one;
+    Ar(i,1) = enc1;
+    yr(i) = rcommand;
+    rcommand++; 
+    cout << "Command is :\n" << rcommand << endl;
+    cout << "and velocity is:\n" << enc1 << endl;
+  }
+
+  rcommand = 127;
+  lcommand = 0;
+  lcommsg.data = lcommand;
+  lcom_pub.publish(lcommsg);
+  sleep(10);
+  for(int i=0;i<255;i++){
+    if(!n.ok()){
+      return -1;
+    }
+    rcommsg.data = rcommand;
+    lcommsg.data = lcommand;
+    rcom_pub.publish(rcommsg);
+    lcom_pub.publish(lcommsg);
+    sleep(2); //wait 1 sec for motor to fully react to the command
+    ros::spinOnce(); //read the encoder values
+    if(rcommand < 127){
+      enc1 = enc1 * -1.0;
+    }
+    if(lcommand < 127){
+      enc2 = enc2 * -1.0;
+    }
+    Al(i,0) = one;
+    Al(i,1) = enc2;
+    yl(i) = lcommand;
+    lcommand++;
+    cout << "Command is :\n" << lcommand << endl;
+    cout << "and velocity is:\n" << enc2 << endl;
+  }
+
   
   /*Save our measurements to files, in case of failure during least squares fitting*/
   std::ofstream file1("measurements.txt");
@@ -76,14 +110,16 @@ int main(int argc, char **argv)
   {
     file1 << "Vector yr :\n" << yr << endl;
     file1 << "Vector yl :\n" << yl << endl; 
-    file1 << "Matrix A :\n" << A << endl;
+    file1 << "Matrix Ar :\n" << Ar << endl;
+    file1 << "Matrix Al :\n" << Al << endl;
   }  
   file1.close();
   
   /*Solve for the weights*/
-  JacobiSVD<MatrixXf> svd(A, ComputeThinU | ComputeThinV);
-  wr = svd.solve(yr);
-  wl = svd.solve(yl);
+  JacobiSVD<MatrixXf> svdr(Ar, ComputeThinU | ComputeThinV);
+  JacobiSVD<MatrixXf> svdl(Al, ComputeThinU | ComputeThinV);
+  wr = svdr.solve(yr);
+  wl = svdl.solve(yl);
   
   std::ofstream file2("weights.txt");
   if (file2.is_open())
@@ -96,7 +132,10 @@ int main(int argc, char **argv)
   cout << "The least squares solution for the right motor is" << wr << endl;
   cout << "The least squares solution for the left motor is" << wl << endl;
   cout << "Peace out :)" << endl;
-
+  rcommsg.data = 127;
+  lcommsg.data = 127;
+  rcom_pub.publish(rcommsg);
+  lcom_pub.publish(lcommsg); 
   return 0;
 }
 

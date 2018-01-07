@@ -10,3 +10,8 @@ catkin_install_python(
   PROGRAMS nodes/message_info_service.py nodes/serial_node.py 
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+
+## Mark other files for installation (e.g. launch and bag files, etc.)
+install(DIRECTORY launch/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+)

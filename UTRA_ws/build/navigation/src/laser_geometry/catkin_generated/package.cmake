@@ -11,4 +11,7 @@ set(laser_geometry_EXEC_DEPENDS "angles" "boost" "eigen" "python-numpy" "roscpp"
 set(laser_geometry_RUN_DEPENDS "angles" "boost" "eigen" "python-numpy" "roscpp" "sensor_msgs" "tf")
 set(laser_geometry_TEST_DEPENDS "rosunit")
 set(laser_geometry_DOC_DEPENDS )
+set(laser_geometry_URL_WEBSITE "http://ros.org/wiki/laser_geometry")
+set(laser_geometry_URL_BUGTRACKER "")
+set(laser_geometry_URL_REPOSITORY "")
 set(laser_geometry_DEPRECATED "")

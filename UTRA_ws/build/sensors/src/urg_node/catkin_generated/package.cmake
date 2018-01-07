@@ -10,4 +10,7 @@ set(urg_node_EXEC_DEPENDS "message_runtime" "diagnostic_updater" "dynamic_reconf
 set(urg_node_RUN_DEPENDS "message_runtime" "diagnostic_updater" "dynamic_reconfigure" "laser_proc" "message_generation" "nodelet" "rosconsole" "roscpp" "sensor_msgs" "std_msgs" "std_srvs" "tf" "urg_c")
 set(urg_node_TEST_DEPENDS "roslint" "roslaunch")
 set(urg_node_DOC_DEPENDS )
+set(urg_node_URL_WEBSITE "http://ros.org/wiki/urg_node")
+set(urg_node_URL_BUGTRACKER "https://github.com/ros-drivers/urg_node/issues")
+set(urg_node_URL_REPOSITORY "https://github.com/ros-drivers/urg_node")
 set(urg_node_DEPRECATED "")

@@ -151,6 +151,7 @@
 /home/brian/UTRA_ART/UTRA_ws/build/control/src/cmdvel/CMakeFiles/install/local.dir
 /home/brian/UTRA_ART/UTRA_ws/build/control/src/cmdvel/CMakeFiles/list_install_components.dir
 /home/brian/UTRA_ART/UTRA_ws/build/control/src/cmdvel/CMakeFiles/install/strip.dir
+/home/brian/UTRA_ART/UTRA_ws/build/control/src/cmdvel/CMakeFiles/velmappercoupled.dir
 /home/brian/UTRA_ART/UTRA_ws/build/control/src/cmdvel/CMakeFiles/velmapper.dir
 /home/brian/UTRA_ART/UTRA_ws/build/control/src/cmdvel/CMakeFiles/roscpp_generate_messages_lisp.dir
 /home/brian/UTRA_ART/UTRA_ws/build/control/src/cmdvel/CMakeFiles/test.dir

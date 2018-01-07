@@ -27,4 +27,6 @@ target_link_libraries(cmdvel ${catkin_LIBRARIES})
 add_executable(velmapper src/velmapper.cpp)
 target_link_libraries(velmapper ${catkin_LIBRARIES})
 
+add_executable(velmappercoupled src/velmappercoupled.cpp)
+target_link_libraries(velmappercoupled ${catkin_LIBRARIES})
 

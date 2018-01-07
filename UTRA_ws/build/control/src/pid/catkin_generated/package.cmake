@@ -10,4 +10,7 @@ set(pid_EXEC_DEPENDS "message_runtime" "roscpp" "std_msgs" "dynamic_reconfigure"
 set(pid_RUN_DEPENDS "message_runtime" "roscpp" "std_msgs" "dynamic_reconfigure")
 set(pid_TEST_DEPENDS )
 set(pid_DOC_DEPENDS )
+set(pid_URL_WEBSITE "http://wiki.ros.org/pid")
+set(pid_URL_BUGTRACKER "")
+set(pid_URL_REPOSITORY "")
 set(pid_DEPRECATED "")

@@ -59,3 +59,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_python" TYPE PROGRAM FILES "/home/brian/UTRA_ART/UTRA_ws/build/sensors/src/rosserial_python/catkin_generated/installspace/serial_node.py")
 endif()
 
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_python/launch" TYPE DIRECTORY FILES "/home/brian/UTRA_ART/UTRA_ws/src/sensors/src/rosserial_python/launch/")
+endif()
+
