@@ -1,0 +1,8 @@
+prefix=/home/brian/UTRA_ART/UTRA_ws/install
+
+Name: cmdvel
+Description: Description of cmdvel
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/brian/UTRA_ART/UTRA_ws/install/lib 
+Requires: 

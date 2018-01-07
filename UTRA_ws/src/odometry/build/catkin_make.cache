@@ -1,0 +1,2 @@
+encodom:odometry
+-DCATKIN_DEVEL_PREFIX=/home/brian/UTRA_ws/odometry/devel -DCMAKE_INSTALL_PREFIX=/home/brian/UTRA_ws/odometry/install -G Unix Makefiles

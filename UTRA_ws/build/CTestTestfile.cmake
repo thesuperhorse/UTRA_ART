@@ -1,0 +1,38 @@
+# CMake generated Testfile for 
+# Source directory: /home/brian/UTRA_ART/UTRA_ws/src
+# Build directory: /home/brian/UTRA_ART/UTRA_ws/build
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs(gtest)
+subdirs(control/src/control)
+subdirs(navigation/src/navigation)
+subdirs(odometry/src/odometry)
+subdirs(sensors/src/rosserial_python)
+subdirs(sensors/src/sensors)
+subdirs(slam/src/slam)
+subdirs(slam/src/slam_gmapping/slam_gmapping)
+subdirs(navigation/src/navigation_msgs/move_base_msgs)
+subdirs(navigation/src/navigation_msgs/map_msgs)
+subdirs(control/src/cmdvel)
+subdirs(navigation/src/map_server)
+subdirs(control/src/pid)
+subdirs(navigation/src/amcl)
+subdirs(odometry/src/encodom)
+subdirs(navigation/src/fake_localization)
+subdirs(slam/src/slam_gmapping/gmapping)
+subdirs(navigation/src/laser_geometry)
+subdirs(navigation/src/robot_pose_ekf)
+subdirs(sensors/src/urg_node)
+subdirs(navigation/src/voxel_grid)
+subdirs(navigation/src/costmap_2d)
+subdirs(navigation/src/nav_core)
+subdirs(navigation/src/base_local_planner)
+subdirs(navigation/src/carrot_planner)
+subdirs(navigation/src/clear_costmap_recovery)
+subdirs(navigation/src/dwa_local_planner)
+subdirs(navigation/src/move_slow_and_clear)
+subdirs(navigation/src/navfn)
+subdirs(navigation/src/global_planner)
+subdirs(navigation/src/rotate_recovery)
+subdirs(navigation/src/move_base)

@@ -1,0 +1,2 @@
+rosserial_python:sensors:urg_node
+-DCATKIN_DEVEL_PREFIX=/home/brian/UTRA_ws/sensors/devel -DCMAKE_INSTALL_PREFIX=/home/brian/UTRA_ws/sensors/install -G Unix Makefiles

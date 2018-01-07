@@ -1,0 +1,18 @@
+<package>
+    <name>slam</name>
+    <version>1.14.2</version>
+    <description>
+        Slam package
+    </description>
+    <maintainer email="brian.aly@mail.utoronto.ca">Brian Aly</maintainer>
+    <author>brian.aly@mail.utoronto.ca</author>
+    <license>MIT</license>  
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <run_depend>slam_gmapping</run_depend>
+
+    <export>
+        <metapackage/>
+    </export>
+</package>

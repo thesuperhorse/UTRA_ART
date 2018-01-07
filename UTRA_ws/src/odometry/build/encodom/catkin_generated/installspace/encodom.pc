@@ -1,0 +1,8 @@
+prefix=/home/brian/UTRA_ws/odometry/install
+
+Name: encodom
+Description: Description of encodom
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/brian/UTRA_ws/odometry/install/lib 
+Requires: 
