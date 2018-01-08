@@ -15,12 +15,12 @@ void targetcb(const geometry_msgs::Twist& msg)
 
 double convertr(double vel)
 {
-  double mcommand = 150;
+  double mcommand = 126.605 + (80.0605*vel);
 }
 
 double convertl(double vel)
 {
-  double mcommand = 150;
+  double mcommand = 127.192 + (80.7714*vel);
 }
 
 int main(int argc, char **argv)
@@ -31,8 +31,8 @@ int main(int argc, char **argv)
   current_time = ros::Time::now();
 
   ros::Subscriber sub1 = n.subscribe("cmd_vel", 1000, targetcb);
-  ros::Publisher rvel_pub = n.advertise<std_msgs::Float64>("rmotor", 50);
-  ros::Publisher lvel_pub = n.advertise<std_msgs::Float64>("lmotor", 50);
+  ros::Publisher rvel_pub = n.advertise<std_msgs::Float64>("encoder_node/rmotor", 50);
+  ros::Publisher lvel_pub = n.advertise<std_msgs::Float64>("encoder_node/lmotor", 50);
   ros::Rate loop_rate(10);
 
   std_msgs::Float64 rvelmsg;
@@ -45,7 +45,7 @@ int main(int argc, char **argv)
   { 
     ros::spinOnce(); //check for msgs, updates xi,yi,azi,x,y,z
 
-    v = sqrt(pow(vx,2) + pow(vy,2)) ;
+    v = sqrt(pow(vx,2) + pow(vy,2)) ; //the following expressions are derived from wheel odometry equations - approximating arcs as lines
     vl = v + (wheelbase*wz)/2 ;
     vr = v - (wheelbase*wz)/2 ;
     rcommand = convertr(vr);
