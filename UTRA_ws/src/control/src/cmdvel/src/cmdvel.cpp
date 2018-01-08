@@ -16,11 +16,13 @@ void targetcb(const geometry_msgs::Twist& msg)
 double convertr(double vel)
 {
   double mcommand = 126.605 + (80.0605*vel);
+  return mcommand;
 }
 
 double convertl(double vel)
 {
   double mcommand = 127.192 + (80.7714*vel);
+  return mcommand;
 }
 
 int main(int argc, char **argv)
