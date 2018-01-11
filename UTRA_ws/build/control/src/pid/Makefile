@@ -90,17 +90,6 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -133,6 +122,17 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /home/brian/UTRA_ART/UTRA_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/brian/UTRA_ART/UTRA_ws/build/CMakeFiles /home/brian/UTRA_ART/UTRA_ws/build/control/src/pid/CMakeFiles/progress.marks
@@ -164,36 +164,6 @@ preinstall/fast:
 depend:
 	cd /home/brian/UTRA_ART/UTRA_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-# Convenience name for target.
-control/src/pid/CMakeFiles/autotune.dir/rule:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f CMakeFiles/Makefile2 control/src/pid/CMakeFiles/autotune.dir/rule
-.PHONY : control/src/pid/CMakeFiles/autotune.dir/rule
-
-# Convenience name for target.
-autotune: control/src/pid/CMakeFiles/autotune.dir/rule
-
-.PHONY : autotune
-
-# fast build rule for target.
-autotune/fast:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/autotune.dir/build.make control/src/pid/CMakeFiles/autotune.dir/build
-.PHONY : autotune/fast
-
-# Convenience name for target.
-control/src/pid/CMakeFiles/sim_time.dir/rule:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f CMakeFiles/Makefile2 control/src/pid/CMakeFiles/sim_time.dir/rule
-.PHONY : control/src/pid/CMakeFiles/sim_time.dir/rule
-
-# Convenience name for target.
-sim_time: control/src/pid/CMakeFiles/sim_time.dir/rule
-
-.PHONY : sim_time
-
-# fast build rule for target.
-sim_time/fast:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/sim_time.dir/build.make control/src/pid/CMakeFiles/sim_time.dir/build
-.PHONY : sim_time/fast
 
 # Convenience name for target.
 control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
@@ -241,19 +211,19 @@ dynamic_reconfigure_generate_messages_nodejs/fast:
 .PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
 
 # Convenience name for target.
-control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f CMakeFiles/Makefile2 control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+control/src/pid/CMakeFiles/pid_gencfg.dir/rule:
+	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f CMakeFiles/Makefile2 control/src/pid/CMakeFiles/pid_gencfg.dir/rule
+.PHONY : control/src/pid/CMakeFiles/pid_gencfg.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_cpp: control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+pid_gencfg: control/src/pid/CMakeFiles/pid_gencfg.dir/rule
 
-.PHONY : dynamic_reconfigure_generate_messages_cpp
+.PHONY : pid_gencfg
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
+pid_gencfg/fast:
+	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/pid_gencfg.dir/build.make control/src/pid/CMakeFiles/pid_gencfg.dir/build
+.PHONY : pid_gencfg/fast
 
 # Convenience name for target.
 control/src/pid/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
@@ -301,49 +271,34 @@ controller/fast:
 .PHONY : controller/fast
 
 # Convenience name for target.
-control/src/pid/CMakeFiles/plant_sim.dir/rule:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f CMakeFiles/Makefile2 control/src/pid/CMakeFiles/plant_sim.dir/rule
-.PHONY : control/src/pid/CMakeFiles/plant_sim.dir/rule
+control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
+	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f CMakeFiles/Makefile2 control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+.PHONY : control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-plant_sim: control/src/pid/CMakeFiles/plant_sim.dir/rule
+dynamic_reconfigure_generate_messages_cpp: control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
 
-.PHONY : plant_sim
+.PHONY : dynamic_reconfigure_generate_messages_cpp
 
 # fast build rule for target.
-plant_sim/fast:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/plant_sim.dir/build.make control/src/pid/CMakeFiles/plant_sim.dir/build
-.PHONY : plant_sim/fast
+dynamic_reconfigure_generate_messages_cpp/fast:
+	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 # Convenience name for target.
-control/src/pid/CMakeFiles/pid_gencfg.dir/rule:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f CMakeFiles/Makefile2 control/src/pid/CMakeFiles/pid_gencfg.dir/rule
-.PHONY : control/src/pid/CMakeFiles/pid_gencfg.dir/rule
+control/src/pid/CMakeFiles/autotune.dir/rule:
+	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f CMakeFiles/Makefile2 control/src/pid/CMakeFiles/autotune.dir/rule
+.PHONY : control/src/pid/CMakeFiles/autotune.dir/rule
 
 # Convenience name for target.
-pid_gencfg: control/src/pid/CMakeFiles/pid_gencfg.dir/rule
+autotune: control/src/pid/CMakeFiles/autotune.dir/rule
 
-.PHONY : pid_gencfg
+.PHONY : autotune
 
 # fast build rule for target.
-pid_gencfg/fast:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/pid_gencfg.dir/build.make control/src/pid/CMakeFiles/pid_gencfg.dir/build
-.PHONY : pid_gencfg/fast
-
-# Convenience name for target.
-control/src/pid/CMakeFiles/setpoint_node.dir/rule:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f CMakeFiles/Makefile2 control/src/pid/CMakeFiles/setpoint_node.dir/rule
-.PHONY : control/src/pid/CMakeFiles/setpoint_node.dir/rule
-
-# Convenience name for target.
-setpoint_node: control/src/pid/CMakeFiles/setpoint_node.dir/rule
-
-.PHONY : setpoint_node
-
-# fast build rule for target.
-setpoint_node/fast:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/setpoint_node.dir/build.make control/src/pid/CMakeFiles/setpoint_node.dir/build
-.PHONY : setpoint_node/fast
+autotune/fast:
+	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/autotune.dir/build.make control/src/pid/CMakeFiles/autotune.dir/build
+.PHONY : autotune/fast
 
 src/autotune.o: src/autotune.cpp.o
 
@@ -399,87 +354,6 @@ src/controller.cpp.s:
 	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/controller.dir/build.make control/src/pid/CMakeFiles/controller.dir/src/controller.cpp.s
 .PHONY : src/controller.cpp.s
 
-src/plant_sim.o: src/plant_sim.cpp.o
-
-.PHONY : src/plant_sim.o
-
-# target to build an object file
-src/plant_sim.cpp.o:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/plant_sim.dir/build.make control/src/pid/CMakeFiles/plant_sim.dir/src/plant_sim.cpp.o
-.PHONY : src/plant_sim.cpp.o
-
-src/plant_sim.i: src/plant_sim.cpp.i
-
-.PHONY : src/plant_sim.i
-
-# target to preprocess a source file
-src/plant_sim.cpp.i:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/plant_sim.dir/build.make control/src/pid/CMakeFiles/plant_sim.dir/src/plant_sim.cpp.i
-.PHONY : src/plant_sim.cpp.i
-
-src/plant_sim.s: src/plant_sim.cpp.s
-
-.PHONY : src/plant_sim.s
-
-# target to generate assembly for a file
-src/plant_sim.cpp.s:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/plant_sim.dir/build.make control/src/pid/CMakeFiles/plant_sim.dir/src/plant_sim.cpp.s
-.PHONY : src/plant_sim.cpp.s
-
-src/setpoint_node.o: src/setpoint_node.cpp.o
-
-.PHONY : src/setpoint_node.o
-
-# target to build an object file
-src/setpoint_node.cpp.o:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/setpoint_node.dir/build.make control/src/pid/CMakeFiles/setpoint_node.dir/src/setpoint_node.cpp.o
-.PHONY : src/setpoint_node.cpp.o
-
-src/setpoint_node.i: src/setpoint_node.cpp.i
-
-.PHONY : src/setpoint_node.i
-
-# target to preprocess a source file
-src/setpoint_node.cpp.i:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/setpoint_node.dir/build.make control/src/pid/CMakeFiles/setpoint_node.dir/src/setpoint_node.cpp.i
-.PHONY : src/setpoint_node.cpp.i
-
-src/setpoint_node.s: src/setpoint_node.cpp.s
-
-.PHONY : src/setpoint_node.s
-
-# target to generate assembly for a file
-src/setpoint_node.cpp.s:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/setpoint_node.dir/build.make control/src/pid/CMakeFiles/setpoint_node.dir/src/setpoint_node.cpp.s
-.PHONY : src/setpoint_node.cpp.s
-
-src/sim_time.o: src/sim_time.cpp.o
-
-.PHONY : src/sim_time.o
-
-# target to build an object file
-src/sim_time.cpp.o:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/sim_time.dir/build.make control/src/pid/CMakeFiles/sim_time.dir/src/sim_time.cpp.o
-.PHONY : src/sim_time.cpp.o
-
-src/sim_time.i: src/sim_time.cpp.i
-
-.PHONY : src/sim_time.i
-
-# target to preprocess a source file
-src/sim_time.cpp.i:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/sim_time.dir/build.make control/src/pid/CMakeFiles/sim_time.dir/src/sim_time.cpp.i
-.PHONY : src/sim_time.cpp.i
-
-src/sim_time.s: src/sim_time.cpp.s
-
-.PHONY : src/sim_time.s
-
-# target to generate assembly for a file
-src/sim_time.cpp.s:
-	cd /home/brian/UTRA_ART/UTRA_ws/build && $(MAKE) -f control/src/pid/CMakeFiles/sim_time.dir/build.make control/src/pid/CMakeFiles/sim_time.dir/src/sim_time.cpp.s
-.PHONY : src/sim_time.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -489,37 +363,25 @@ help:
 	@echo "... install"
 	@echo "... edit_cache"
 	@echo "... install/local"
-	@echo "... rebuild_cache"
-	@echo "... autotune"
-	@echo "... sim_time"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... dynamic_reconfigure_generate_messages_eus"
 	@echo "... test"
 	@echo "... dynamic_reconfigure_generate_messages_nodejs"
-	@echo "... list_install_components"
-	@echo "... install/strip"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... pid_gencfg"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... controller"
-	@echo "... plant_sim"
-	@echo "... pid_gencfg"
-	@echo "... setpoint_node"
+	@echo "... list_install_components"
+	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... install/strip"
+	@echo "... rebuild_cache"
+	@echo "... autotune"
 	@echo "... src/autotune.o"
 	@echo "... src/autotune.i"
 	@echo "... src/autotune.s"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
-	@echo "... src/plant_sim.o"
-	@echo "... src/plant_sim.i"
-	@echo "... src/plant_sim.s"
-	@echo "... src/setpoint_node.o"
-	@echo "... src/setpoint_node.i"
-	@echo "... src/setpoint_node.s"
-	@echo "... src/sim_time.o"
-	@echo "... src/sim_time.i"
-	@echo "... src/sim_time.s"
 .PHONY : help
 
 

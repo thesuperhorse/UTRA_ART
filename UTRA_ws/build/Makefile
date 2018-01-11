@@ -1544,32 +1544,6 @@ _run_tests_map_server_rostest_test_rtest.xml/fast:
 .PHONY : _run_tests_map_server_rostest_test_rtest.xml/fast
 
 #=============================================================================
-# Target rules for targets named autotune
-
-# Build rule for target.
-autotune: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 autotune
-.PHONY : autotune
-
-# fast build rule for target.
-autotune/fast:
-	$(MAKE) -f control/src/pid/CMakeFiles/autotune.dir/build.make control/src/pid/CMakeFiles/autotune.dir/build
-.PHONY : autotune/fast
-
-#=============================================================================
-# Target rules for targets named sim_time
-
-# Build rule for target.
-sim_time: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sim_time
-.PHONY : sim_time
-
-# fast build rule for target.
-sim_time/fast:
-	$(MAKE) -f control/src/pid/CMakeFiles/sim_time.dir/build.make control/src/pid/CMakeFiles/sim_time.dir/build
-.PHONY : sim_time/fast
-
-#=============================================================================
 # Target rules for targets named dynamic_reconfigure_generate_messages_lisp
 
 # Build rule for target.
@@ -1609,17 +1583,17 @@ dynamic_reconfigure_generate_messages_nodejs/fast:
 .PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_cpp
+# Target rules for targets named pid_gencfg
 
 # Build rule for target.
-dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_cpp
-.PHONY : dynamic_reconfigure_generate_messages_cpp
+pid_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pid_gencfg
+.PHONY : pid_gencfg
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	$(MAKE) -f control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
+pid_gencfg/fast:
+	$(MAKE) -f control/src/pid/CMakeFiles/pid_gencfg.dir/build.make control/src/pid/CMakeFiles/pid_gencfg.dir/build
+.PHONY : pid_gencfg/fast
 
 #=============================================================================
 # Target rules for targets named dynamic_reconfigure_gencfg
@@ -1661,43 +1635,30 @@ controller/fast:
 .PHONY : controller/fast
 
 #=============================================================================
-# Target rules for targets named plant_sim
+# Target rules for targets named dynamic_reconfigure_generate_messages_cpp
 
 # Build rule for target.
-plant_sim: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 plant_sim
-.PHONY : plant_sim
+dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_cpp
+.PHONY : dynamic_reconfigure_generate_messages_cpp
 
 # fast build rule for target.
-plant_sim/fast:
-	$(MAKE) -f control/src/pid/CMakeFiles/plant_sim.dir/build.make control/src/pid/CMakeFiles/plant_sim.dir/build
-.PHONY : plant_sim/fast
+dynamic_reconfigure_generate_messages_cpp/fast:
+	$(MAKE) -f control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make control/src/pid/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named pid_gencfg
+# Target rules for targets named autotune
 
 # Build rule for target.
-pid_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pid_gencfg
-.PHONY : pid_gencfg
+autotune: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 autotune
+.PHONY : autotune
 
 # fast build rule for target.
-pid_gencfg/fast:
-	$(MAKE) -f control/src/pid/CMakeFiles/pid_gencfg.dir/build.make control/src/pid/CMakeFiles/pid_gencfg.dir/build
-.PHONY : pid_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named setpoint_node
-
-# Build rule for target.
-setpoint_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 setpoint_node
-.PHONY : setpoint_node
-
-# fast build rule for target.
-setpoint_node/fast:
-	$(MAKE) -f control/src/pid/CMakeFiles/setpoint_node.dir/build.make control/src/pid/CMakeFiles/setpoint_node.dir/build
-.PHONY : setpoint_node/fast
+autotune/fast:
+	$(MAKE) -f control/src/pid/CMakeFiles/autotune.dir/build.make control/src/pid/CMakeFiles/autotune.dir/build
+.PHONY : autotune/fast
 
 #=============================================================================
 # Target rules for targets named run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml
@@ -5770,18 +5731,15 @@ help:
 	@echo "... clean_test_results_map_server"
 	@echo "... rtest"
 	@echo "... _run_tests_map_server_rostest_test_rtest.xml"
-	@echo "... autotune"
-	@echo "... sim_time"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... dynamic_reconfigure_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_nodejs"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... pid_gencfg"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... controller"
-	@echo "... plant_sim"
-	@echo "... pid_gencfg"
-	@echo "... setpoint_node"
+	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... autotune"
 	@echo "... run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml"
 	@echo "... _run_tests_amcl_rostest_test_rosie_multilaser.xml"
 	@echo "... run_tests_amcl_rostest_test_rosie_multilaser.xml"
