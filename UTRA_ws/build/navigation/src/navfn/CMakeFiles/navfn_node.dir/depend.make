@@ -22,6 +22,7 @@ navigation/src/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/ki
 navigation/src/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 navigation/src/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 navigation/src/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+navigation/src/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 navigation/src/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 navigation/src/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/kinetic/include/class_loader/multi_library_class_loader.h
 navigation/src/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h

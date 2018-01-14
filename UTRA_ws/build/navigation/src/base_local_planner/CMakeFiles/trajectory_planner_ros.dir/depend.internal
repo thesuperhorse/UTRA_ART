@@ -346,6 +346,7 @@ navigation/src/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/traj
  /opt/ros/kinetic/include/class_loader/class_loader_core.h
  /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
  /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+ /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
  /opt/ros/kinetic/include/class_loader/meta_object.h
  /opt/ros/kinetic/include/class_loader/multi_library_class_loader.h
  /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h

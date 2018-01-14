@@ -24,8 +24,8 @@ void lmotorCb( const std_msgs::Float64& control_msg){
   analogWrite(leftmotor,leftspeed);
 }
 
-ros::Subscriber<std_msgs::Float64> sub("rmotor", &rmotorCb );
-ros::Subscriber<std_msgs::Float64> sub2("lmotor", &lmotorCb );
+ros::Subscriber<std_msgs::Float64> sub("/right_controller/corrected_command", &rmotorCb );
+ros::Subscriber<std_msgs::Float64> sub2("/left_controller/corrected_command", &lmotorCb );
 void setup()
 { 
   nh.initNode();

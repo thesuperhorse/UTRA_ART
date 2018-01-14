@@ -16,6 +16,7 @@ navigation/src/costmap_2d/CMakeFiles/costmap_2d_node.dir/src/costmap_2d_node.cpp
  /opt/ros/kinetic/include/class_loader/class_loader_core.h
  /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
  /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+ /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
  /opt/ros/kinetic/include/class_loader/meta_object.h
  /opt/ros/kinetic/include/class_loader/multi_library_class_loader.h
  /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h

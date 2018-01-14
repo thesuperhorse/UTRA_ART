@@ -23,6 +23,7 @@ navigation/src/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /op
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+navigation/src/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/kinetic/include/class_loader/multi_library_class_loader.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h
@@ -196,6 +197,7 @@ navigation/src/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: 
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+navigation/src/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/kinetic/include/class_loader/multi_library_class_loader.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h
@@ -369,6 +371,7 @@ navigation/src/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cp
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+navigation/src/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/kinetic/include/class_loader/multi_library_class_loader.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h
@@ -662,6 +665,7 @@ navigation/src/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+navigation/src/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/kinetic/include/class_loader/multi_library_class_loader.h
 navigation/src/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h

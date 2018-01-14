@@ -14,6 +14,7 @@ navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o: /
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/inflation_layer.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/Config.h
@@ -170,6 +171,7 @@ navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /o
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/Config.h
@@ -523,6 +525,7 @@ navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o: /opt
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/static_layer.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/Config.h
@@ -687,6 +690,7 @@ navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h
 navigation/src/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/Config.h

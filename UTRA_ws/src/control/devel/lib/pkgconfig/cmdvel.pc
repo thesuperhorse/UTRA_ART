@@ -1,8 +1,0 @@
-prefix=/home/brian/UTRA_ws/src/control/devel
-
-Name: cmdvel
-Description: Description of cmdvel
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/brian/UTRA_ws/src/control/devel/lib 
-Requires: 

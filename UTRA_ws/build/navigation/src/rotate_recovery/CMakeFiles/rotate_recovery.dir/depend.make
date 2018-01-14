@@ -22,6 +22,7 @@ navigation/src/rotate_recovery/CMakeFiles/rotate_recovery.dir/src/rotate_recover
 navigation/src/rotate_recovery/CMakeFiles/rotate_recovery.dir/src/rotate_recovery.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 navigation/src/rotate_recovery/CMakeFiles/rotate_recovery.dir/src/rotate_recovery.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 navigation/src/rotate_recovery/CMakeFiles/rotate_recovery.dir/src/rotate_recovery.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+navigation/src/rotate_recovery/CMakeFiles/rotate_recovery.dir/src/rotate_recovery.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 navigation/src/rotate_recovery/CMakeFiles/rotate_recovery.dir/src/rotate_recovery.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 navigation/src/rotate_recovery/CMakeFiles/rotate_recovery.dir/src/rotate_recovery.cpp.o: /opt/ros/kinetic/include/class_loader/multi_library_class_loader.h
 navigation/src/rotate_recovery/CMakeFiles/rotate_recovery.dir/src/rotate_recovery.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h

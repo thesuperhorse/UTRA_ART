@@ -7,6 +7,7 @@ slam/src/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/src/nodelet
 slam/src/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/src/nodelet.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 slam/src/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/src/nodelet.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 slam/src/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/src/nodelet.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+slam/src/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/src/nodelet.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 slam/src/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/src/nodelet.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 slam/src/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/src/nodelet.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
 slam/src/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/src/nodelet.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point32.h

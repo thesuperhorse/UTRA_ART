@@ -581,6 +581,7 @@ navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_
 navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/kinetic/include/class_loader/multi_library_class_loader.h
 navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h
@@ -877,6 +878,7 @@ navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_pl
 navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_core.h
 navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
 navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
 navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/kinetic/include/class_loader/meta_object.h
 navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/kinetic/include/class_loader/multi_library_class_loader.h
 navigation/src/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h

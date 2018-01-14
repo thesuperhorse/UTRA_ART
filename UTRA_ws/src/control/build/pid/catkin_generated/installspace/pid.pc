@@ -1,8 +1,0 @@
-prefix=/home/brian/UTRA_ws/src/control/install
-
-Name: pid
-Description: Description of pid
-Version: 0.0.23
-Cflags: -I/home/brian/UTRA_ws/src/control/install/include
-Libs: -L/home/brian/UTRA_ws/src/control/install/lib 
-Requires: roscpp std_msgs message_runtime dynamic_reconfigure

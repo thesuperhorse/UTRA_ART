@@ -8,6 +8,7 @@ slam/src/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/src/nodelet
  /opt/ros/kinetic/include/class_loader/class_loader_core.h
  /opt/ros/kinetic/include/class_loader/class_loader_exceptions.h
  /opt/ros/kinetic/include/class_loader/class_loader_register_macro.h
+ /opt/ros/kinetic/include/class_loader/console_bridge_compatibility.h
  /opt/ros/kinetic/include/class_loader/meta_object.h
  /opt/ros/kinetic/include/geometry_msgs/Point.h
  /opt/ros/kinetic/include/geometry_msgs/Point32.h

@@ -89,7 +89,7 @@ int main(int argc, char **argv)
     vr = vr * vrd; //direction of speed...
     vl = vl * vld;                                                  
     v = (vr + vl) / 2.0 ;
-    wz = (vl - vr) / wheelbase ;
+    wz = (vr - vl) / wheelbase ;
 
     /*inv kin */
     thz = thz + (dt*(wzo + wz)/2.0); //trapz rule     
