@@ -9,19 +9,21 @@
 ros::NodeHandle  nh;
 int leftmotor = 5;
 int rightmotor = 6;
-float leftspeed = 127;
-float rightspeed = 127;
+float leftspeed = 0;
+float rightspeed = 0;
+float leftcommand = 127;
+float rightcommand = 127;
 
 void rmotorCb( const std_msgs::Float64& control_msg){
   
   rightspeed = control_msg.data;
-  analogWrite(rightmotor,rightspeed);
+  rightcommand = (127 + (80.5*rightspeed)); 
 }
 
 void lmotorCb( const std_msgs::Float64& control_msg){
   
   leftspeed = control_msg.data;
-  analogWrite(leftmotor,leftspeed);
+  leftcommand = (127 + (80.5*leftspeed)); 
 }
 
 ros::Subscriber<std_msgs::Float64> sub("/right_controller/corrected_command", &rmotorCb );
@@ -36,6 +38,8 @@ void setup()
 void loop()
 {  
   nh.spinOnce();
+  analogWrite(rightmotor,rightcommand);
+  analogWrite(leftmotor,leftcommand);
   delay(1);
 }
 
